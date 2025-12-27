@@ -1,11 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 
+import { Link } from "react-router-dom";
+
 
 //aos animation
 import AOS from 'aos';
 import React, { useEffect } from 'react';
 import 'aos/dist/aos.css';
+import { useState } from 'react';
 
 
 
@@ -17,12 +20,16 @@ const Header = () => {
     });
   }, []);
 
+  const [Dropdown, setDropdown] = useState(false);
+
+
+
   return (
 
     // Header field
-    <div>
+    <header >
 
-  
+
       {/* video link */}
 
       <video
@@ -40,26 +47,39 @@ const Header = () => {
 
       {/* header logo  field */}
       <div className='header-logo'>
-        <h1 data-aos='fade-right'  style={{color:'#ffd700'}}>Arjun Lucky Palace</h1>
-  
-            <div className='d-flex flex-column gap-1'>
+        <h1 data-aos='fade-right' style={{ color: '#ffd700' }}>Arjun Lucky Palace</h1>
 
-              <div className='dot'>
+        {/* three dot content */}
+        <div className='d-flex flex-column pt-2 gap-1 dots' onClick={() => setDropdown(!Dropdown)}>
 
+          <div className='dot'>
+
+          </div>
+          <div className='dot'>
+
+          </div>
+          <div className='dot'>
+
+          </div>
+
+          {/* dropdown box */}
+
+          {
+            Dropdown &&
+            (
+              <div className='drop-down'>
+                <Link to="/availability">Check <br></br> &nbsp;  Availability</Link>
+                <Link to="/gallery">Our Gallery</Link>
               </div>
-              <div className='dot'>
+            )
+          }
 
-              </div>
-              <div className='dot'>
 
-              </div>
 
-            </div>
+
+        </div>
 
       </div>
-
-
-
 
 
       {/* header title field */}
@@ -74,7 +94,7 @@ const Header = () => {
       </div>
 
 
-    </div>
+    </header>
 
 
 
