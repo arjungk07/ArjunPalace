@@ -5,9 +5,14 @@ import { FaAngleRight } from "react-icons/fa";
 import { FaCircle } from "react-icons/fa";
 
 
+
+
 const Calendar = () => {
+
+ 
+
     return (
-        <section className='calendar-section section'>
+        <section className='calendar-section section' ref={topContentRef}>
             <div className="container">
                 <h2 data-aos="fade-up">Events Calendar</h2>
                 {/* calendar container */}
@@ -128,7 +133,7 @@ const Calendar = () => {
                                 </div>
                             </div>
                             <a href="https://wa.me/919443138918" style={{ textDecoration: "none", color: "transparent" }}>
-                                <button data-aos='fade-up' className='header-button' style={{margin:"20px 0px"}}>Check Availability</button>
+                                <button data-aos='fade-up' className='header-button' style={{ margin: "20px 0px" }}>Check Availability</button>
                             </a>
                         </div>
                     </div>
