@@ -4,15 +4,36 @@ import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 import { FaCircle } from "react-icons/fa";
 
-
+import { useState, useEffect } from 'react';
+import { IoIosArrowUp } from "react-icons/io";
 
 
 const Calendar = () => {
 
- 
+    const [Top, SetTop] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 400) {
+                SetTop(true);
+            }
+            else {
+                SetTop(false);
+            }
+        });
+    }, []);
+
+    function handletop() {
+        window.scrollTo(
+            {
+                top: 0,
+                behavior: "smooth",
+            }
+        )
+    }
 
     return (
-        <section className='calendar-section section' ref={topContentRef}>
+        <section className='calendar-section section'>
             <div className="container">
                 <h2 data-aos="fade-up">Events Calendar</h2>
                 {/* calendar container */}
@@ -144,7 +165,24 @@ const Calendar = () => {
 
 
 
+
+
             </div>
+            {/* go top button  */}
+
+            {
+                Top &&
+                (
+                    <div className="top" onClick={handletop}>
+                        <div className="top-icon">
+                            <IoIosArrowUp />
+                        </div>
+                    </div>
+                )
+            }
+
+
+
 
 
         </section>

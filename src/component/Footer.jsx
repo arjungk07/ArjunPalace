@@ -4,7 +4,35 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
 
+import { useState,useEffect } from 'react';
+
+import { IoIosArrowUp } from "react-icons/io";
+
+
 const Footer = () => {
+
+ const [Top,SetTop] = useState(false);
+
+ useEffect(()=>
+{
+  window.addEventListener("scroll",()=>
+  {
+    if(window.scrollY > 400 )
+    {
+      SetTop(true);
+    }
+    else
+    {
+      SetTop(false);
+    }
+
+  });
+
+},[]);
+
+
+
+
   return (
     <footer>
       {/* footer container */}
@@ -21,6 +49,14 @@ const Footer = () => {
         <p style={{ fontSize: "18px", fontWeight: "400", paddingBottom: "10px" ,lineHeight:"23px"}}>© 2025 JFA Lucky Palace. All Rights Reserved.</p>
       </div>
       <p style={{ fontSize: "15px", fontWeight: "400", paddingBottom: "10px" }}>Designed By Arjun tech</p>
+
+      {/* set top button */}
+      {
+        Top && 
+        (
+          <div className="top"><div className="top-icon"><IoIosArrowUp /></div></div>
+        )
+      }
     </footer>
   )
 }
