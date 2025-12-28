@@ -30,7 +30,15 @@ const Footer = () => {
 
 },[]);
 
-
+function handleTop ()
+{
+  window.scrollTo(
+    {
+      top:0,
+      behavior:"smooth",
+    }
+  )
+};
 
 
   return (
@@ -54,7 +62,7 @@ const Footer = () => {
       {
         Top && 
         (
-          <div className="top"><div className="top-icon"><IoIosArrowUp /></div></div>
+          <div className="top" onClick={handleTop}><div className="top-icon"><IoIosArrowUp /></div></div>
         )
       }
     </footer>
