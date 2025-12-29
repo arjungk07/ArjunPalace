@@ -47,7 +47,7 @@ const Header = () => {
 
       {/* header logo  field */}
       <div className='header-logo'>
-        <h1 data-aos='fade-right' style={{ color: '#ffd700' }}>Arjun Lucky Palace</h1>
+        <h1 data-aos='fade-right' data-aos-duration="1500" style={{ color: '#ffd700' }}>Arjun Lucky Palace</h1>
 
         {/* three dot content */}
         <div className='d-flex flex-column pt-2 gap-1 dots' onClick={() => setDropdown(!Dropdown)}>
@@ -86,10 +86,10 @@ const Header = () => {
 
       <div className="header">
         <div className='header-title'>
-          <h1 data-aos='fade-up'>Your Perfect Wedding Destination</h1>
-          <h6 data-aos='fade-up' >15,000 sq.ft of luxury and elegance in the heart of Madurai</h6>
+          <h1 data-aos='fade-up' data-aos-duration="1500">Your Perfect Wedding Destination</h1>
+          <h6 data-aos='fade-up' data-aos-duration="1500" >15,000 sq.ft of luxury and elegance in the heart of Madurai</h6>
           {/* <Button variant="warning" className='w-80 h-80 m-3 button' data-aos='fade-up'>Warning</Button> */}
-          <a href="https://wa.me/919443138918" style={{ textDecoration: "none", color: "transparent" }}> <button data-aos='fade-up' className='header-button'>Book Your Dream Wedding</button></a>
+          <a href="https://wa.me/9095917892" style={{ textDecoration: "none", color: "transparent" }}> <button data-aos='fade-up' className='header-button'>Book Your Dream Wedding</button></a>
         </div>
       </div>
 

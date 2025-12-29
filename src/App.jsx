@@ -18,7 +18,7 @@ import Calendar from './component/Availability Pages/Calendar';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/ArjunPalace'>
 
 
 

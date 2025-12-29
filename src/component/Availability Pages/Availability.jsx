@@ -45,7 +45,7 @@ const Availability = () => {
 
       {/* logo and navbar content */}
       <div className='avai-logo'>
-        <h2 data-aos='fade-right' style={{ color: '#ffd700' }}>Arjun Lucky Palace</h2>
+        <h2 data-aos='fade-right'data-aos-duration="1500" style={{ color: '#ffd700' }}>Arjun Lucky Palace</h2>
 
         {/* three dot content */}
         <div className='d-flex flex-column gap-1 dots' onClick={() => setDropdown(!Dropdown)}>
@@ -101,8 +101,8 @@ const Availability = () => {
 
         {/* Availability Header title content */}
         <div className="avai-header">
-          <h2 data-aos='fade-right'>Event Calendar</h2>
-          <a href="https://wa.me/919443138918" style={{ textDecoration: "none", color: "transparent" }}>
+          <h2 data-aos='fade-right' data-aos-duration="1500" >Event Calendar</h2>
+          <a href="https://wa.me/9095917892" style={{ textDecoration: "none", color: "transparent" }} data-aos="zoom-in" data-aos-duration='1500'>
             <button data-aos='fade-up' className='header-button'>Check Availability</button>
           </a>
         </div>

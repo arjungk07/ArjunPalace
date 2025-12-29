@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { use } from 'react'
 // react icons
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
@@ -11,6 +11,13 @@ import { IoIosArrowUp } from "react-icons/io";
 const Calendar = () => {
 
     const [Top, SetTop] = useState(false);
+    const [month, setmonth] = useState(11);
+    const [year, setyear] = useState(2025);
+ 
+    const months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -23,6 +30,8 @@ const Calendar = () => {
         });
     }, []);
 
+
+    // to go window top
     function handletop() {
         window.scrollTo(
             {
@@ -30,6 +39,26 @@ const Calendar = () => {
                 behavior: "smooth",
             }
         )
+    }
+    // prevmonth function
+    function prevmonth() {
+        if (month == 0) {
+            setmonth(11);
+            setyear(year - 1)
+        }
+        else {
+            setmonth(month - 1);
+        }
+    }
+    // nextmonth function
+    function nextmonth() {
+        if (month == 11) {
+            setmonth(0);
+            setyear(year + 1)
+        }
+        else {
+            setmonth(month + 1);
+        }
     }
 
     return (
@@ -40,9 +69,9 @@ const Calendar = () => {
                 <div className="calendar-container">
                     <div className="calendar-main" data-aos="fade-right">
                         <div className="calendar-header">
-                            <button><FaAngleLeft /></button>
-                            <div className="calendar-month">December 2025</div>
-                            <button><FaAngleRight /></button>
+                            <button onClick={prevmonth}><FaAngleLeft /></button>
+                            <div className="calendar-month">{months[month]} {year}</div>
+                            <button onClick={nextmonth}><FaAngleRight /></button>
                         </div>
 
                         {/* calendar gird like day buttons */}
@@ -59,8 +88,8 @@ const Calendar = () => {
                             {/* date division */}
                             <div className="calendar-day">30</div>
                             <div className="calendar-day">1</div>
-                            <div className="calendar-day">2</div>
-                            <div className="calendar-day">3</div>
+                            <div className="calendar-day book">2</div>
+                            <div className="calendar-day book">3</div>
                             <div className="calendar-day">4</div>
                             <div className="calendar-day">5</div>
                             <div className="calendar-day">6</div>
@@ -74,7 +103,7 @@ const Calendar = () => {
                             <div className="calendar-day">14</div>
                             <div className="calendar-day">15</div>
                             <div className="calendar-day">16</div>
-                            <div className="calendar-day">17</div>
+                            <div className="calendar-day book">17</div>
                             <div className="calendar-day">18</div>
                             <div className="calendar-day">19</div>
                             <div className="calendar-day">20</div>
@@ -86,9 +115,21 @@ const Calendar = () => {
                             <div className="calendar-day">26</div>
                             <div className="calendar-day">27</div>
                             <div className="calendar-day">28</div>
-                            <div className="calendar-day">29</div>
-                            <div className="calendar-day">30</div>
+                            <div className="calendar-day cur-date">29</div>
+                            <div className="calendar-day"  >30</div>
                             <div className="calendar-day">31</div>
+                            <div className="calendar-day" style={{ opacity: "0.7" }}>1</div>
+                            <div className="calendar-day" style={{ opacity: "0.7" }}>2</div>
+                            <div className="calendar-day" style={{ opacity: "0.7" }}>3</div>
+                            <div className="calendar-day" style={{ opacity: "0.7" }}>4</div>
+                            <div className="calendar-day" style={{ opacity: "0.7" }}>5</div>
+                            <div className="calendar-day" style={{ opacity: "0.7" }}>6</div>
+                            <div className="calendar-day" style={{ opacity: "0.7" }}>7</div>
+                            <div className="calendar-day" style={{ opacity: "0.7" }}>8</div>
+                            <div className="calendar-day" style={{ opacity: "0.7" }}>9</div>
+                            <div className="calendar-day" style={{ opacity: "0.7" }}>10</div>
+
+
                             {/* <div className="calendar-day">1</div>
                             <div className="calendar-day">2</div>
                             <div className="calendar-day"></div> */}
@@ -153,7 +194,7 @@ const Calendar = () => {
                                     <span className="status-label">Available Days</span>
                                 </div>
                             </div>
-                            <a href="https://wa.me/919443138918" style={{ textDecoration: "none", color: "transparent" }}>
+                            <a href="https://wa.me/9095917892" style={{ textDecoration: "none", color: "transparent" }}>
                                 <button data-aos='fade-up' className='header-button' style={{ margin: "20px 0px" }}>Check Availability</button>
                             </a>
                         </div>
