@@ -11,6 +11,10 @@ import Button from 'react-bootstrap/Button';
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineCall } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
+import { MdHome } from "react-icons/md";
+
+
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
     return (
@@ -52,7 +56,12 @@ const Contact = () => {
 
         <section className='contact-section'>
             <div className="container">
-                <h2 className='section-title'>Connect With Us</h2>
+                <div className="d-flex justify-content-evenly my-2 my-md-4">
+                    <div ><Link to="/"><MdHome style={{ fontSize: "35px", color:"#ffd700" }} /></Link></div>
+                    <div >
+                        <h2 style={{color:"#ffd700"}} className='fs-1 fs-md-10 text-center'>Connect With Us</h2>
+                    </div>
+                </div>
 
                 <div className="contact-container">
                     <div className="contact-info">

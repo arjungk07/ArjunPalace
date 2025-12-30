@@ -3,17 +3,22 @@ import React, { use } from 'react'
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 import { FaCircle } from "react-icons/fa";
+import { MdHome } from "react-icons/md";
+import { FaArrowLeft } from "react-icons/fa6";
+
 
 import { useState, useEffect } from 'react';
 import { IoIosArrowUp } from "react-icons/io";
 
+
+import { Link } from 'react-router-dom';
 
 const Calendar = () => {
 
     const [Top, SetTop] = useState(false);
     const [month, setmonth] = useState(11);
     const [year, setyear] = useState(2025);
- 
+
     const months = [
         "January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
@@ -64,7 +69,12 @@ const Calendar = () => {
     return (
         <section className='calendar-section section'>
             <div className="container">
-                <h2 data-aos="fade-up">Events Calendar</h2>
+                <div className="row align-items-center">
+                    <div className="col-2"><Link to="/"><MdHome style={{fontSize:"35px",color:"#ffd700"}}/></Link></div>
+                    <div className="col-10">
+                        <h2 data-aos="fade-up">Events Calendar</h2>
+                    </div>
+                </div>
                 {/* calendar container */}
                 <div className="calendar-container">
                     <div className="calendar-main" data-aos="fade-right">
@@ -161,8 +171,8 @@ const Calendar = () => {
 
                     {/* calendar sidebar */}
 
-                    <div className="calendar-sidebar" data-aos="fade-left">
-                        <div className="upcoming-events">
+                    <div className="calendar-sidebar" >
+                        <div className="upcoming-events" data-aos="fade-left">
                             <h3>📅 Booked Dates</h3>
                             <div className="date-grid">
                                 <div className='date-column'>26-10-2025</div>
@@ -181,7 +191,7 @@ const Calendar = () => {
                         </div>
 
                         {/* booking status */}
-                        <div className="booking-info">
+                        <div className="booking-info" data-aos="fade-left">
                             <h3>Booking Information</h3>
                             <p>Check real-time availability and book your perfect date</p>
                             <div className="booking-status">

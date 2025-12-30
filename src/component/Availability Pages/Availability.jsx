@@ -66,9 +66,9 @@ const Availability = () => {
             Dropdown &&
             (
               <div className='drop-down'>
-                <Link to="/ArjunPalace/">Home</Link>
-                <Link to="/gallery">Details</Link>
-                <Link to="/gallery">Events</Link>
+                <Link to="/">Home</Link>
+                <Link to="/availability/calendar">Events</Link>
+                <Link to="/ArjunPalace/contact">Contact Us</Link>
               </div>
             )
           }

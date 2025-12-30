@@ -14,20 +14,18 @@ import Contact from './component/Contact';
 import Availability from './component/Availability Pages/Availability';
 import Footer from './component/Footer';
 import Calendar from './component/Availability Pages/Calendar';
+import OurGallery from './component/OurGallery';
 
 
 const App = () => {
   return (
     <BrowserRouter basename='/ArjunPalace'>
-
-
-
       {/* Routing pages */}
       <Routes>
 
         {/* Home Page */}
         <Route
-          path="ArjunPalace/"
+          path="/"
           element={
             <>
               <Header />
@@ -50,8 +48,20 @@ const App = () => {
             </>
           }
         />
+
+        <Route
+        path='/availability/calendar' element={<Calendar/>}
+        />
+
+         <Route
+        path='/ArjunPalace/contact' element={<>
+              <Contact />
+              <Footer /></>}
+        />
+
+        {/* our gallery pages */}
         
-        <Route path='/gallery' element={<Gallery/>}/>
+        <Route path='/gallery' element={<OurGallery/>}/>
 
       </Routes>
 
