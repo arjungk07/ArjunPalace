@@ -54,7 +54,7 @@ const Contact = () => {
 
         // </div>
 
-        <section className='contact-section'>
+        <section className='contact-section' id='contact'>
             <div className="container">
                 <div className="d-flex justify-content-evenly my-2 my-md-4">
                     <div ><Link to="/"><MdHome style={{ fontSize: "35px", color:"#ffd700" }} /></Link></div>

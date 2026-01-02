@@ -48,7 +48,7 @@ const Event = () => {
 
     return (
 
-        <div className="event-part" style={{overflow:"hidden"}}>
+        <div className="event-part" style={{ overflow: "hidden" }}>
             <div className='particles'>
                 <div className="event-particle" style={{ left: "5.54%", top: "6.5434%", animationDelay: "0.54451", animationDuration: "5.4344s" }}><FaCircle style={{ width: "10.343%", height: "10.544%" }} /></div>
                 <div className="event-particle" style={{ left: "20.767%", top: "7.5434%", animationDelay: "0.54451", animationDuration: "5.4344s" }}><FaCircle style={{ width: "25.343%", height: "10.544%" }} /></div>
@@ -104,6 +104,7 @@ const Event = () => {
                                 <div className="event-nav-grid">
 
                                     {/* if you navigate component in same pages use a href and give id for each section and one more not use Link and /route */}
+                                    <a href="/" className="btn btn-primary event-nav-item">🏠 Home</a>
                                     <a href="#weddings" className="btn btn-primary event-nav-item">💍 Weddings</a>
                                     <a href="#birthday" className="btn btn-primary event-nav-item">🎉 Birthdays</a>
                                     <a href="#corporate" className="btn btn-primary event-nav-item">🏢 Corporate</a>
@@ -150,8 +151,8 @@ const Event = () => {
                     <div className="event-nav-grid">
 
                         {/* if you navigate component in same pages use a href and give id for each section and one more not use Link and /route */}
-                        <a href="#weddings"  className="btn btn-primary event-nav-item">💍 Weddings</a>
-                        <a href="#birthday"  className="btn btn-primary event-nav-item">🎉 Birthdays</a>
+                        <a href="#weddings" className="btn btn-primary event-nav-item">💍 Weddings</a>
+                        <a href="#birthday" className="btn btn-primary event-nav-item">🎉 Birthdays</a>
                         <a href="#corporate" className="btn btn-primary event-nav-item">🏢 Corporate</a>
                         <a href="#baby" className="btn btn-primary event-nav-item">🧒 Baby Showers</a>
                         <a href="#college" className="btn btn-primary event-nav-item">🎓 College Functions</a>
@@ -540,7 +541,7 @@ const Event = () => {
 
 
             {/* corporate party content structure */}
-            <section id='corporate' className='event-section' style={{marginTop: "1rem" ,background: "#faf8f5"}}>
+            <section id='corporate' className='event-section' style={{ marginTop: "1rem", background: "#faf8f5" }}>
                 <div className="event-container">
                     <div className="section-header">
                         <h2>🏢 Corporate Events</h2>
@@ -915,7 +916,7 @@ const Event = () => {
 
             {/* college function section */}
 
-            <section id='college' className='event-section' style={{ background: "#faf8f5"}}>
+            <section id='college' className='event-section' style={{ background: "#faf8f5" }}>
                 <div className="event-container">
                     <div className="section-header">
                         <h2>🎓 College Functions</h2>

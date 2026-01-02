@@ -56,9 +56,13 @@ const App = () => {
 
         <Route
           path='/contact' element={<>
+            <Header />
+            <About />
+            <Gallery />
+            <Premium />
             <Contact />
-            <Footer /></>}
-        />
+            <Footer />
+          </>} />
 
         {/* our gallery pages */}
 
@@ -75,7 +79,7 @@ const App = () => {
         <Route path='college' element={<Event />} />
         <Route path='religion' element={<Event />} />
 
-      
+
 
       </Routes>
 

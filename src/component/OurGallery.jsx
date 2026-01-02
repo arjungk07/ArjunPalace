@@ -33,7 +33,7 @@ const OurGallery = () => {
         <div className="row">
           {/* left side big image */}
           <div className="col-12 col-md-6">
-            <img src='https://jfaluckypalace.com/image/18.jpg' className="img-fixed img-zoom rounded" style={{maxWidth:"100%",height:"100%"}} />
+            <img src='https://jfaluckypalace.com/image/18.jpg' className="img-fixed img-zoom rounded" style={{ maxWidth: "100%", height: "100%" }} />
           </div>
           {/* right side 4 image */}
           <div className="col-12 col-md-6">
@@ -44,7 +44,7 @@ const OurGallery = () => {
               </div>
 
               <div className="col-6 rounded">
-                <img src='https://jfaluckypalace.com/image/16.jpg' className='img-fluid img-fixed img-zoom rounded'  />
+                <img src='https://jfaluckypalace.com/image/16.jpg' className='img-fluid img-fixed img-zoom rounded' />
               </div>
 
               <div className="col-6">
@@ -98,15 +98,19 @@ const OurGallery = () => {
           <button className='gallery-nav next'><img src={gallery_right}></img></button>
           <div className="gallery-wrapper">
             <div className="gallery-track">
-              <div className="gallery-item"><img src='https://i.postimg.cc/c13yKmLN/Book-now-a-palace-for-your-wedding-JFA-LUCKY-PALACE-Uthangudi-Madurai-Book-now-91-90097-50000-2.jpg' className='img-fixed' style={{maxWidth:"100%",height:"100%"}}></img></div>
-              <div className="gallery-item"><img src='https://i.postimg.cc/BQZpWSyw/Book-now-a-palace-for-your-wedding-JFA-LUCKY-PALACE-Uthangudi-Madurai-Book-now-91-90097-50000-3.jpg' className='img-fixed' style={{maxWidth:"100%",height:"100%"}}></img></div>
-              <div className="gallery-item"><img src='https://i.postimg.cc/BvBFtPw0/Start-your-love-from-here-BOOKINGS-OPEN-JFA-LUCKY-PALACE-MADURAI.jpg' className='img-fixed' style={{maxWidth:"100%",height:"100%"}}></img></div>
-              <div className="gallery-item"><img src='https://i.postimg.cc/d0TY9gyQ/Start-your-love-from-here-BOOKINGS-OPEN-JFA-LUCKY-PALACE-MADURAI-1.jpg' className='img-fixed' style={{maxWidth:"100%",height:"100%"}}></img></div>
-              <div className="gallery-item"><img src='https://i.postimg.cc/ZKGKXRsr/Book-now-a-palace-for-your-wedding-JFA-LUCKY-PALACE-Uthangudi-Madurai-Book-now-91-90097-50000-4.jpg' className='img-fixed' style={{maxWidth:"100%",height:"100%"}}></img></div>
+              <div className="maingallery-item"><img src='https://i.postimg.cc/c13yKmLN/Book-now-a-palace-for-your-wedding-JFA-LUCKY-PALACE-Uthangudi-Madurai-Book-now-91-90097-50000-2.jpg' className='img-fixed' style={{ maxWidth: "100%", height: "100%" }}></img></div>
+              <div className="maingallery-item"><img src='https://i.postimg.cc/cChZn0G6/Book-now-a-palace-for-your-wedding-JFA-LUCKY-PALACE-Uthangudi-Madurai-Book-now-91-90097-50000-6.jpg' className='img-fixed' style={{ maxWidth: "100%", height: "100%" }}></img></div>
+              <div className="maingallery-item"><img src='https://i.postimg.cc/BQZpWSyw/Book-now-a-palace-for-your-wedding-JFA-LUCKY-PALACE-Uthangudi-Madurai-Book-now-91-90097-50000-3.jpg' className='img-fixed' style={{ maxWidth: "100%", height: "100%" }}></img></div>
+              <div className="maingallery-item"><img src='https://i.postimg.cc/ZKGKXRsr/Book-now-a-palace-for-your-wedding-JFA-LUCKY-PALACE-Uthangudi-Madurai-Book-now-91-90097-50000-4.jpg' className='img-fixed' style={{ maxWidth: "100%", height: "100%" }}></img></div>
+              <div className="maingallery-item"><img src='https://i.postimg.cc/DzQ3MvBS/Book-now-a-palace-for-your-wedding-JFA-LUCKY-PALACE-Uthangudi-Madurai-Book-now-91-90097-50000.jpg' className='img-fixed' style={{ maxWidth: "100%", height: "100%" }}></img></div>
 
             </div>
           </div>
+
+
+
         </div>
+
       </div>
 
 
