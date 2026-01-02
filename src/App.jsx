@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './../src/App.css';
 
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 //call components
 import Header from './component/Header';
@@ -15,11 +15,12 @@ import Availability from './component/Availability Pages/Availability';
 import Footer from './component/Footer';
 import Calendar from './component/Availability Pages/Calendar';
 import OurGallery from './component/OurGallery';
+import Event from './component/Event Pages/Event';
 
 
 const App = () => {
   return (
-    <BrowserRouter basename='/ArjunPalace'>
+    <HashRouter >
       {/* Routing pages */}
       <Routes>
 
@@ -43,31 +44,46 @@ const App = () => {
           path="/availability"
           element={
             <>
-            <Availability/>
-            <Calendar/>
+              <Availability />
+              <Calendar />
             </>
           }
         />
 
         <Route
-        path='/availability/calendar' element={<Calendar/>}
+          path='/availability/calendar' element={<Calendar />}
         />
 
-         <Route
-        path='/ArjunPalace/contact' element={<>
-              <Contact />
-              <Footer /></>}
+        <Route
+          path='/contact' element={<>
+            <Contact />
+            <Footer /></>}
         />
 
         {/* our gallery pages */}
-        
-        <Route path='/gallery' element={<OurGallery/>}/>
+
+        <Route path='/gallery' element={<OurGallery />} />
+
+
+        {/* Event pages */}
+
+        <Route path='/events' element={<Event />} />
+        <Route path='weddings' element={<Event />} />
+        <Route path='birthday' element={<Event />} />
+        <Route path='corporate' element={<Event />} />
+        <Route path='baby' element={<Event />} />
+        <Route path='college' element={<Event />} />
+        <Route path='religion' element={<Event />} />
+
+      
 
       </Routes>
 
 
 
-    </BrowserRouter>
+
+
+    </HashRouter>
   )
 }
 

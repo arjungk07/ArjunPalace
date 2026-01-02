@@ -67,8 +67,8 @@ const Availability = () => {
             (
               <div className='drop-down'>
                 <Link to="/">Home</Link>
-                <Link to="/availability/calendar">Events</Link>
-                <Link to="/ArjunPalace/contact">Contact Us</Link>
+                <Link to="/events">Events</Link>
+                <Link to="/contact">Contact Us</Link>
               </div>
             )
           }
