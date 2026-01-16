@@ -12,7 +12,7 @@ const Availability = () => {
   const [Dropdown, setDropdown] = useState(false);
 
   return (
-    <section className='availability-section'>
+    <section className='availability-section' >
 
       <div className="particles">
         <div className="particle" style={{ left: "5.54%", top: "6.5434%", animationDelay: "0.54451", animationDuration: "5.4344s" }}><FaCircle style={{ width: "10.343%", height: "10.544%" }} /></div>
@@ -67,8 +67,9 @@ const Availability = () => {
             (
               <div className='drop-down'>
                 <Link to="/">Home</Link>
+                <a href='#details'>Details</a>
                 <Link to="/events">Events</Link>
-                <a href="#contact">Contact Us</a>
+                <Link to="/packages">Packages</Link>
               </div>
             )
           }
@@ -103,7 +104,7 @@ const Availability = () => {
         <div className="avai-header">
           <h2 data-aos='fade-right' data-aos-duration="1500" >Event Calendar</h2>
           <a href="https://wa.me/9095917892" style={{ textDecoration: "none", color: "transparent" }} data-aos="zoom-in" data-aos-duration='1500'>
-            <button data-aos='fade-up' className='header-button'>Check Availability</button>
+            <button data-aos='fade-up' className='shine-btn' style={{fontSize:"1.2rem",letterSpacing:"2px",fontWeight:"500"}}>Check Availability</button>
           </a>
         </div>
 

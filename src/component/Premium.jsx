@@ -9,7 +9,7 @@ const Premium = () => {
         
         <section className='premium-section'>
             <div className="container">
-                <h2 className="section-title" data-aos="fade-right">Premium Amenities</h2>
+                <h2 className="section-title" data-aos="fade-right" style={{color:"#ffd700"}}>Premium Amenities</h2>
                 <div className="premium-container">
 
                     <div className="premium-card">

@@ -40,7 +40,7 @@ const Footer = () => {
     <footer>
       {/* footer container */}
       <div className="container">
-        <h2 className='section-title'>Arjun Lucky Palace</h2>
+        <h2 style={{color:"#ffd700"}}>Arjun Lucky Palace</h2>
         <p style={{ fontSize: "18px", fontWeight: "400", paddingBottom: "10px", lineHeight: "23px" }}>Where dreams become beautiful reality</p>
 
         {/* social links */}

@@ -46,6 +46,9 @@ const Event = () => {
         )
     };
 
+
+
+
     return (
 
         <div className="event-part" style={{ overflow: "hidden" }}>
@@ -94,7 +97,7 @@ const Event = () => {
                     <a href="#college">College</a>
                 </div>
 
-                <div className="toggle" onClick={() => SetToggle(!Toggle)}><IoReorderThree /></div>
+                <div className="event-toggle" onClick={() => SetToggle(!Toggle)}><IoReorderThree /></div>
 
                 {
                     Toggle &&

@@ -89,7 +89,7 @@ const Header = () => {
           <h1 data-aos='fade-up' data-aos-duration="1500">Your Perfect Wedding Destination</h1>
           <h6 data-aos='fade-up' data-aos-duration="1500" >15,000 sq.ft of luxury and elegance in the heart of Madurai</h6>
           {/* <Button variant="warning" className='w-80 h-80 m-3 button' data-aos='fade-up'>Warning</Button> */}
-          <a href="https://wa.me/9095917892" style={{ textDecoration: "none", color: "transparent" }}> <button data-aos='fade-up' className='header-button'>Book Your Dream Wedding</button></a>
+          <a href="https://wa.me/9095917892" style={{ textDecoration: "none", color: "transparent" }}> <button data-aos='fade-up' className='shine-btn'>Book Your Dream Wedding</button></a>
         </div>
       </div>
 

@@ -67,13 +67,10 @@ const Calendar = () => {
     }
 
     return (
-        <section className='calendar-section section'>
+        <section className='calendar-section section' id='details'>
             <div className="container">
-                <div className="row align-items-center">
-                    <div className="col-2"><Link to="/"><MdHome style={{fontSize:"35px",color:"#ffd700"}}/></Link></div>
-                    <div className="col-10">
-                        <h2 data-aos="fade-up">Events Calendar</h2>
-                    </div>
+                <div className='text-center section-title'>
+                    <h2 data-aos="fade-up">Events Calendar</h2>
                 </div>
                 {/* calendar container */}
                 <div className="calendar-container">
@@ -172,7 +169,7 @@ const Calendar = () => {
                     {/* calendar sidebar */}
 
                     <div className="calendar-sidebar" >
-                        <div className="upcoming-events" data-aos="fade-left">
+                        <div className="upcoming-events" data-aos="fade-right">
                             <h3>📅 Booked Dates</h3>
                             <div className="date-grid">
                                 <div className='date-column'>26-10-2025</div>
@@ -191,7 +188,7 @@ const Calendar = () => {
                         </div>
 
                         {/* booking status */}
-                        <div className="booking-info" data-aos="fade-left">
+                        <div className="booking-info" data-aos="fade-right">
                             <h3>Booking Information</h3>
                             <p>Check real-time availability and book your perfect date</p>
                             <div className="booking-status">
@@ -205,7 +202,7 @@ const Calendar = () => {
                                 </div>
                             </div>
                             <a href="https://wa.me/9095917892" style={{ textDecoration: "none", color: "transparent" }}>
-                                <button data-aos='fade-up' className='header-button' style={{ margin: "20px 0px" }}>Check Availability</button>
+                                <button  className='shine-btn' style={{ margin: "20px 0px" }}>Check Availability</button>
                             </a>
                         </div>
                     </div>

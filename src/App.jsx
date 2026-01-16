@@ -11,12 +11,13 @@ import About from './component/About';
 import Gallery from './component/Gallery';
 import Premium from './component/Premium';
 import Contact from './component/Contact';
-import Availability from './component/Availability Pages/Availability';
+import Availability from '../src/Availability Pages/Availability'
 import Footer from './component/Footer';
-import Calendar from './component/Availability Pages/Calendar';
+import Calendar from '../src/Availability Pages/Calendar';
 import OurGallery from './component/OurGallery';
-import Event from './component/Event Pages/Event';
-
+import Event from '../src/Event Pages/Event';
+import View from './component/View';
+import Package from '../src/Packages Page/Package';
 
 const App = () => {
   return (
@@ -49,24 +50,15 @@ const App = () => {
             </>
           }
         />
-
+     {/* Details route */}
         <Route
-          path='/availability/calendar' element={<Calendar />}
+          path='details' element={<><Availability/><Calendar/></>}
         />
-
-        <Route
-          path='/contact' element={<>
-            <Header />
-            <About />
-            <Gallery />
-            <Premium />
-            <Contact />
-            <Footer />
-          </>} />
 
         {/* our gallery pages */}
 
         <Route path='/gallery' element={<OurGallery />} />
+        <Route path='/View' element={<View/>}/>
 
 
         {/* Event pages */}
@@ -78,6 +70,17 @@ const App = () => {
         <Route path='baby' element={<Event />} />
         <Route path='college' element={<Event />} />
         <Route path='religion' element={<Event />} />
+       
+       {/* Packages page */}
+
+        <Route path='/packages' element={<Package/>}/>
+        <Route path='calculator' element={<Package/>}/>
+        <Route path='blog' element={<Package/>}/>
+        <Route path='vendor' element={<Package/>}/>
+        <Route path='decor' element={<Package/>}/>
+        <Route path='press' element={<Package/>}/>
+        <Route path='booknow' element={<Package/>}/>
+
 
 
 

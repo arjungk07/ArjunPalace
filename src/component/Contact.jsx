@@ -56,10 +56,9 @@ const Contact = () => {
 
         <section className='contact-section' id='contact'>
             <div className="container">
-                <div className="d-flex justify-content-evenly my-2 my-md-4">
-                    <div ><Link to="/"><MdHome style={{ fontSize: "35px", color:"#ffd700" }} /></Link></div>
+                <div className=" my-2 my-md-4">
                     <div >
-                        <h2 style={{color:"#ffd700"}} className='fs-1 fs-md-10 text-center'>Connect With Us</h2>
+                        <h2  className='section-title'>Connect With Us</h2>
                     </div>
                 </div>
 
